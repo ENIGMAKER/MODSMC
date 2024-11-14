@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="https://i.imgur.com/e5yhMMH.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODS MC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="https://primary.jwwb.nl/public/u/v/q/temp-qzbvvxnhdrtjjwjttjyi/pmkxer/8c802f8027c6d5b0c3b0f5248743fc96-removebg-preview-copia.png" alt="MXOS C Logo" id="loading-logo" width="200" height="auto">
+    </div>
+    <div id="content" style="display: none;">
+        <header>
+            <h1>MODS MC</h1>
+        </header>
+        <nav id="categories">
+            <button class="category-btn" data-category="terreno">Generación de Terreno</button>
+            <button class="category-btn" data-category="armaduras">Armaduras</button>
+            <button class="category-btn" data-category="magia">Magia</button>
+            <button class="category-btn" data-category="dimensiones">Dimensiones</button>
+            <button class="category-btn" data-category="herramientas">Herramientas</button>
+            <button class="category-btn" data-category="mobs">Mobs</button>
+            <button class="category-btn" data-category="terror">Terror</button>
+            <button class="category-btn" data-category="visuales">Visuales</button>
+            <button class="category-btn" data-category="utiles">Útiles</button>
+            <button class="category-btn" data-category="biomas">Biomas</button>
+        </nav>
+        <main id="mod-list">
+            <!-- La lista de mods se generará aquí dinámicamente -->
+        </main>
+        <div id="mod-details" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="mod-title"></h2>
+                <div id="image-carousel" class="carousel">
+                    <button id="prev-btn" class="carousel-btn">&lt;</button>
+                    <div id="carousel-container">
+                        <img id="mod-image" src="" alt="Imagen del mod">
+                    </div>
+                    <button id="next-btn" class="carousel-btn">&gt;</button>
+                </div>
+                <p id="mod-description"></p>
+                <a id="mod-link" href="" target="_blank">Descargar</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
